@@ -1,0 +1,27 @@
+{
+  "name": "MoreThanAnImage",
+  "version": "0.1.0",
+  "description": "Load images via XMLHttpRequest and retrieve image HTTP header info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markdaws/MoreThanAnImage.git"
+  },
+  "keywords": [
+    "javascript",
+    "image",
+    "metadata",
+    "binary",
+    "exif"
+  ],
+  "author": "Mark Dawson",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "c048abca1cde870ba88035210ef864ce9b7adb48",
+  "dependencies": {
+    "serve": "~1.3.0"
+  }
+}
