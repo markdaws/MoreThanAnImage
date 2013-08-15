@@ -4,7 +4,7 @@
   "description": "Load images via XMLHttpRequest and retrieve image HTTP header info",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/serve -p 9998 ."
+    "start": "node_modules/.bin/serve -p 9999 ."
   },
   "repository": {
     "type": "git",
