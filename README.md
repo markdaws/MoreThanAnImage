@@ -10,7 +10,7 @@ images on a CDN or some other service, you can eliminate having the overhead of 
 ##Example usage
 ```javascript
     var url = '/google.jpg';
-    var loadRequest = MoreThanAnImage.load(url, function(error, response) {
+    MoreThanAnImage.load(url, function(error, response) {
         if(error) {
             alert('got an error:' + error.status);
             return;
