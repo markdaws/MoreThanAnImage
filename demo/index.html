@@ -15,7 +15,7 @@
 $(document).ready(function() {
 
     var url = '/google.jpg';
-    url = 'http://s3.amazonaws.com/md-morethananimage/00146a23-7a41-4d32-bcd1-14f26c90d4e8';
+    //url = 'http://s3.amazonaws.com/md-morethananimage/00146a23-7a41-4d32-bcd1-14f26c90d4e8';
     var loadRequest = MoreThanAnImage.load(url, function(error, response) {
         if(error) {
             alert('got an error:' + error.status);
@@ -29,11 +29,6 @@ $(document).ready(function() {
         }
         $('#headerContainer').append('<p>' + htmlString + '</p>');
     });
-
-    // TODO: ...
-    //loadRequest.progressChanged = function() {
-    //    console.log('progress updated');
-    //};
 });
 </script>
 </body>
