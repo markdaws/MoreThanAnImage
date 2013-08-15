@@ -1,1 +1,34 @@
-My Github Page
+<html>
+<head><title></title></head>
+<body>
+
+<p>There should be an image below:</p>
+<div id="imageContainer"></div>
+
+<p>The headers associated with the image:</p>
+<div id="headerContainer"></div>
+
+<script src="jquery.js"></script>
+<script src="more-than-an-image.js"></script>
+<script>
+
+$(document).ready(function() {
+
+    var url = '/google.jpg';
+    var loadRequest = MoreThanAnImage.load(url, function(error, response) {
+        if(error) {
+            alert('got an error:' + error.status);
+            return;
+        }
+        $('#imageContainer').append(response.image);
+
+        var htmlString = '';
+        for(var key in response.headers) {
+            htmlString += key + ' => ' + response.headers[key] + '<br />';
+        }
+        $('#headerContainer').append('<p>' + htmlString + '</p>');
+    });
+});
+</script>
+</body>
+</html>
